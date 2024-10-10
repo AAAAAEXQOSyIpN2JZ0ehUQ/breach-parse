@@ -15,7 +15,7 @@ cd breach-parse
 sudo chmod +x cd breach-parse/*
 cd breach-parse
 sudo ./install.sh
-ls -lthasx
+ls -lthas
 ```
 
 Descarga la lista de contraseñas violadas desde magnet, que se encuentra aquí:
