@@ -1,13 +1,13 @@
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse/blob/master/Imagenes/breach-parse.png)
+ï»¿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse/blob/master/Imagenes/breach-parse.png)
 
 # Findips :octocat:
 
-## :information_source: Descripción
+## :information_source: DescripciÃ³n
 Breach-Parse v2: Herramienta de Parsing de Dominios Comprometidos
 
-Este es un script de Bash diseñado para extraer credenciales de archivos filtrados en grandes colecciones de bases de datos de breaches. Automatiza el proceso de búsqueda de dominios específicos dentro de la Breach Compilation.
+Este es un script de Bash diseÃ±ado para extraer credenciales de archivos filtrados en grandes colecciones de bases de datos de breaches. Automatiza el proceso de bÃºsqueda de dominios especÃ­ficos dentro de la Breach Compilation.
 
-## :computer: Instalación
+## :computer: InstalaciÃ³n
 ```bash
 cd /opt
 sudo git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse
@@ -18,67 +18,67 @@ sudo ./install.sh
 ls -lthas
 ```
 
-Descarga la lista de contraseñas violadas desde magnet, que se encuentra aquí:
+Descarga la lista de contraseÃ±as violadas desde magnet, que se encuentra aquÃ­:
 
-: `magnet:?xt=urn:btih:7ffbcd8cee06aba2ce6561688cf68ce2addca0a3&dn=BreachCompilation&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fglotorrents.pw%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337`
+`magnet:?xt=urn:btih:7ffbcd8cee06aba2ce6561688cf68ce2addca0a3&dn=BreachCompilation&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fglotorrents.pw%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337`
 
-Si no almacena la lista de contraseñas (BreachCompilation) en `/opt/breach-parse`, especifique la ubicación de la siguiente manera:
+Si no almacena la lista de contraseÃ±as (BreachCompilation) en `/opt/breach-parse`, especifique la ubicaciÃ³n de la siguiente manera:
 
 `breach-parse @gmail.com gmail.txt "~/Downloads/BreachCompilation/data"`
 
 Ejecute `breach-parse` para obtener instrucciones
 ## :rocket: Modo de Uso
 
-?? Ejemplos de Búsqueda para "hacker"
+ğŸ” Ejemplos de BÃºsqueda para "hacker"
 
-?? Búsqueda en un dominio específico (por ejemplo, Gmail):
+ğŸ“§ BÃºsqueda en un dominio especÃ­fico (por ejemplo, Gmail):
 ```bash
 ./breach-parse.sh "@gmail.com" gmail.txt; cat gmail-master.txt | grep -i "hacker"
 ```
 
-?? Búsqueda en múltiples dominios:
+ğŸŒ BÃºsqueda en mÃºltiples dominios:
 ```bash
 ./breach-parse.sh "@yahoo.com|@hotmail.com" multiple.txt; cat multiple-master.txt | grep -i "hacker"
 ```
 
-?? Búsqueda en un dominio específico con archivo de salida personalizado:
+ğŸ“ BÃºsqueda en un dominio especÃ­fico con archivo de salida personalizado:
 ```bash
 ./breach-parse.sh "@example.com" example.txt; cat example-master.txt | grep -i "hacker"
 ```
 
-?? Búsqueda de un usuario específico (por ejemplo, admin) en un dominio:
+ğŸ‘¤ BÃºsqueda de un usuario especÃ­fico (por ejemplo, admin) en un dominio:
 ```bash
 ./breach-parse.sh "@example.com" example.txt
 cat example-master.txt | grep -i "admin" | grep -i "hacker"
 ```
 
-?? Búsqueda en un archivo existente:
+ğŸ“„ BÃºsqueda en un archivo existente:
 ```bash
 cat existing_file.txt | grep -i "hacker"
 ```
 
-??? Búsqueda en un dominio específico y luego en un archivo maestro:
+ğŸ—‚ï¸ BÃºsqueda en un dominio especÃ­fico y luego en un archivo maestro:
 ```bash
 ./breach-parse.sh "@live.cn" live.txt; cat live-master.txt | grep -i "hacker"
 ```
 
-?? Búsqueda de "hacker" en una lista de múltiples dominios:
+ğŸ“¨ BÃºsqueda de "hacker" en una lista de mÃºltiples dominios:
 ```bash
 ./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "hacker"
 ```
 
 ## :bookmark_tabs: Notas
 
-- El script busca archivos en la ubicación de la Breach Compilation y extrae coincidencias de correos electrónicos y contraseñas para el dominio proporcionado.
-- La salida incluye usuarios y contraseñas en archivos separados.
-- Para evitar problemas con espacios en las rutas, asegúrate de usar comillas dobles donde sea necesario.
+- El script busca archivos en la ubicaciÃ³n de la Breach Compilation y extrae coincidencias de correos electrÃ³nicos y contraseÃ±as para el dominio proporcionado.
+- La salida incluye usuarios y contraseÃ±as en archivos separados.
+- Para evitar problemas con espacios en las rutas, asegÃºrate de usar comillas dobles donde sea necesario.
 
-## :star2: Características 
+## :star2: CaracterÃ­sticas 
 
-- Colores e Iconos: El script muestra el progreso y resultados utilizando colores y símbolos para una mejor visualización.
-- Barra de progreso: Durante el análisis, muestra el avance del procesamiento de los archivos.
-- Extracción automática: Se generan archivos separados para usuarios y contraseñas extraídos.
-- Prevención de duplicados: El script filtra automáticamente los duplicados para evitar resultados repetidos.
+- Colores e Iconos: El script muestra el progreso y resultados utilizando colores y sÃ­mbolos para una mejor visualizaciÃ³n.
+- Barra de progreso: Durante el anÃ¡lisis, muestra el avance del procesamiento de los archivos.
+- ExtracciÃ³n automÃ¡tica: Se generan archivos separados para usuarios y contraseÃ±as extraÃ­dos.
+- PrevenciÃ³n de duplicados: El script filtra automÃ¡ticamente los duplicados para evitar resultados repetidos.
 
 ## :hammer_and_wrench: Requisitos 
 
@@ -87,17 +87,17 @@ cat existing_file.txt | grep -i "hacker"
 
 ## :open_file_folder: Estructura del Repositorio
 
-| Icono            | Nombre              | Descripción                                      |
+| Icono            | Nombre              | DescripciÃ³n                                      |
 |------------------|---------------------|--------------------------------------------------|
-| :file_folder:    | Imagenes            | Carpeta que contiene imágenes del script en ejecución |
+| :file_folder:    | Imagenes            | Carpeta que contiene imÃ¡genes del script en ejecuciÃ³n |
 | :page_facing_up: | BreachCompilation   |  |
 | :page_facing_up: | breach-parse.sh     |  |
 | :page_facing_up: | LICENSE             | Archivo de licencia MIT para el proyecto         |
-| :book:           | README.md           | Archivo README con la documentación del proyecto |
-| :package:        | install.sh          | Script de instalación automatizada               |
+| :book:           | README.md           | Archivo README con la documentaciÃ³n del proyecto |
+| :package:        | install.sh          | Script de instalaciÃ³n automatizada               |
 
 ## :email: Contacto 
-* :busts_in_silhouette: **Heath Adams**: [GitHub](https://github.com/hmaverickadams/breach-pars) - Desarrollador breach-pars 
-* :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Findips) - Actualizacion Breach-Parse v2  
+* :busts_in_silhouette: **Heath Adams**: [GitHub](https://github.com/hmaverickadams/breach-parse) - Desarrollador breach-pars 
+* :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse/tree/master) - Actualizacion Breach-Parse v2  
 
-? https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ???? ] ?
+â˜† https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  âƒ˜âƒ¤ê™°âœ° ] â˜†
