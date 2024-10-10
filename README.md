@@ -68,6 +68,13 @@ cat example-master.txt | grep -i "hacker"
 ./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "hacker"
 ```
 
+## :rocket: Modo de Uso
+
+🔍 Ejemplos de Búsqueda para "hacker" con query.sh
+
+:memo:Para un mejor manejo de las búsquedas, por favor, colócate en la siguiente ruta: /opt/breach-parse/BreachCompilation
+
+
 ## :bookmark_tabs: Notas
 
 - El script busca archivos en la ubicación de la Breach Compilation y extrae coincidencias de correos electrónicos y contraseñas para el dominio proporcionado.
@@ -91,8 +98,8 @@ cat example-master.txt | grep -i "hacker"
 | Icono            | Nombre              | Descripción                                      |
 |------------------|---------------------|--------------------------------------------------|
 | :file_folder:    | Imagenes            | Carpeta que contiene imágenes del script en ejecución |
-| :page_facing_up: | BreachCompilation   |  |
-| :page_facing_up: | breach-parse.sh     |  |
+| :page_facing_up: | BreachCompilation   | Carpeta que contiene datos de brechas de seguridad. |
+| :page_facing_up: | breach-parse.sh     | Script principal para analizar dominios comprometidos. |
 | :page_facing_up: | LICENSE             | Archivo de licencia MIT para el proyecto         |
 | :book:           | README.md           | Archivo README con la documentación del proyecto |
 | :package:        | install.sh          | Script de instalación automatizada               |
