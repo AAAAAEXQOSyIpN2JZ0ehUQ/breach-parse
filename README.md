@@ -1,9 +1,9 @@
 ﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse/blob/master/Imagenes/breach-parse.png)
 
-# Findips :octocat:
+# Breach Parse :octocat:
 
 ## :information_source: Descripción
-Breach-Parse v2: Herramienta de Parsing de Dominios Comprometidos
+Breach-Parse: Herramienta de Parsing de Dominios Comprometidos
 
 Este es un script de Bash diseñado para extraer credenciales de archivos filtrados en grandes colecciones de bases de datos de breaches. Automatiza el proceso de búsqueda de dominios específicos dentro de la Breach Compilation.
 
@@ -97,6 +97,6 @@ cat existing_file.txt | grep -i "hacker"
 
 ## :email: Contacto 
 * :busts_in_silhouette: **Heath Adams**: [GitHub](https://github.com/hmaverickadams/breach-parse) - Desarrollador breach-pars 
-* :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse/tree/master) - Actualizacion Breach-Parse v2  
+* :busts_in_silhouette: **Dzhoni_dev**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse) - Actualizacion breach-parse.sh Apactacion codigo  
 
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
