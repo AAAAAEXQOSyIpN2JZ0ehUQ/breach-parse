@@ -31,6 +31,8 @@ Ejecute `breach-parse` para obtener instrucciones
 
 🔍 Ejemplos de Búsqueda para "hacker"
 
+:memo:Para un mejor manejo de las búsquedas, por favor, colócate en la siguiente ruta: /opt/breach-parse
+
 📧 Búsqueda en un dominio específico (por ejemplo, Gmail):
 ```bash
 ./breach-parse.sh "@gmail.com" gmail.txt; cat gmail-master.txt | grep -i "hacker"
@@ -53,7 +55,7 @@ Ejecute `breach-parse` para obtener instrucciones
 
 📄 Búsqueda en un archivo existente:
 ```bash
-cat existing_file.txt | grep -i "hacker"
+cat example-master.txt | grep -i "hacker"
 ```
 
 🗂️ Búsqueda en un dominio específico y luego en un archivo maestro:
