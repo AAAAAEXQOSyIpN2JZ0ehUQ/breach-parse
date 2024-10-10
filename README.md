@@ -1,4 +1,4 @@
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse/blob/main/Imagenes/breach-parse.jpg)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse/blob/main/Imagenes/breach-parse.png)
 
 # Findips :octocat:
 
@@ -90,8 +90,8 @@ cat existing_file.txt | grep -i "hacker"
 | Icono            | Nombre              | Descripción                                      |
 |------------------|---------------------|--------------------------------------------------|
 | :file_folder:    | Imagenes            | Carpeta que contiene imágenes del script en ejecución |
-| :page_facing_up: | Findips_arp-scan    | Script principal que realiza un escaneo de red con arp-scan |
-| :page_facing_up: | Findips_nmap        | Script principal que realiza un escaneo de red con nmap |
+| :page_facing_up: | BreachCompilation   |  |
+| :page_facing_up: | breach-parse.sh     |  |
 | :page_facing_up: | LICENSE             | Archivo de licencia MIT para el proyecto         |
 | :book:           | README.md           | Archivo README con la documentación del proyecto |
 | :package:        | install.sh          | Script de instalación automatizada               |
