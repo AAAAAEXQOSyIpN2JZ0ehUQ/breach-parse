@@ -48,8 +48,7 @@ Ejecute `breach-parse` para obtener instrucciones
 
 👤 Búsqueda de un usuario específico (por ejemplo, admin) en un dominio:
 ```bash
-./breach-parse.sh "@example.com" example.txt
-cat example-master.txt | grep -i "admin" | grep -i "hacker"
+./breach-parse.sh "@example.com" example.txt; cat example-master.txt | grep -i "admin" | grep -i "hacker"
 ```
 
 📄 Búsqueda en un archivo existente:
