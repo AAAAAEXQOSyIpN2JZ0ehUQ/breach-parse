@@ -10,7 +10,7 @@ Este es un script de Bash diseñado para extraer credenciales de archivos filtra
 ## :computer: Instalación
 ```bash
 cd /opt
-sudo git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse
+sudo git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse.git
 cd breach-parse
 sudo chmod +x cd breach-parse/*
 cd breach-parse
@@ -67,13 +67,6 @@ cat example-master.txt | grep -i "hacker"
 ```bash
 ./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "hacker"
 ```
-
-## :rocket: Modo de Uso
-
-🔍 Ejemplos de Búsqueda para "hacker" con query.sh
-
-:memo:Para un mejor manejo de las búsquedas, por favor, colócate en la siguiente ruta: /opt/breach-parse/BreachCompilation
-
 
 ## :bookmark_tabs: Notas
 
