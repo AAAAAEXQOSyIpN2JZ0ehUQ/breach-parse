@@ -105,7 +105,7 @@ cat example-master.txt | grep -i "hacker"
 | :package:        | install.sh          | Script de instalación automatizada               |
 
 ## :email: Contacto 
-* :busts_in_silhouette: **Heath Adams**: [GitHub](https://github.com/hmaverickadams/breach-parse) - Desarrollador breach-pars 
+* :busts_in_silhouette: **hmaverickadams**: [GitHub](https://github.com/hmaverickadams/breach-parse) - Desarrollador breach-pars (Heath Adams) 
 * :busts_in_silhouette: **Dzhoni_dev**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse) - Actualizacion breach-parse.sh Apactacion codigo  
 
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
