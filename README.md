@@ -33,39 +33,24 @@ Ejecute `breach-parse` para obtener instrucciones
 
 :memo:Para un mejor manejo de las búsquedas, por favor, colócate en la siguiente ruta: /opt/breach-parse
 
-📧 Búsqueda en un dominio específico (por ejemplo, Gmail):
+🗂️ Búsqueda en un dominio específico con archivo de salida personalizado:
 ```bash
 ./breach-parse.sh "@gmail.com" gmail.txt; cat gmail-master.txt | grep -i "hacker"
 ```
 
-🌐 Búsqueda en múltiples dominios:
+🗂️ Búsqueda de "hacker" en una lista de múltiples dominios:
+```bash
+./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "hacker"
+```
+
+🗂️ Búsqueda en múltiples dominios:
 ```bash
 ./breach-parse.sh "@yahoo.com|@hotmail.com" multiple.txt; cat multiple-master.txt | grep -i "hacker"
-```
-
-📁 Búsqueda en un dominio específico con archivo de salida personalizado:
-```bash
-./breach-parse.sh "@example.com" example.txt; cat example-master.txt | grep -i "hacker"
-```
-
-👤 Búsqueda de un usuario específico (por ejemplo, admin) en un dominio:
-```bash
-./breach-parse.sh "@example.com" example.txt; cat example-master.txt | grep -i "admin" | grep -i "hacker"
 ```
 
 📄 Búsqueda en un archivo existente:
 ```bash
 cat example-master.txt | grep -i "hacker"
-```
-
-🗂️ Búsqueda en un dominio específico y luego en un archivo maestro:
-```bash
-./breach-parse.sh "@live.cn" live.txt; cat live-master.txt | grep -i "hacker"
-```
-
-📨 Búsqueda de "hacker" en una lista de múltiples dominios:
-```bash
-./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "hacker"
 ```
 
 ## :bookmark_tabs: Notas
