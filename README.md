@@ -29,18 +29,28 @@ Si no almacena la lista de contraseñas (BreachCompilation) en `/opt/breach-pars
 Ejecute `breach-parse` para obtener instrucciones
 ## :rocket: Modo de Uso
 
-🔍 Ejemplos de Búsqueda para "hacker"
+🔍 Ejemplos de Búsquedas
 
 :memo:Para un mejor manejo de las búsquedas, por favor, colócate en la siguiente ruta: /opt/breach-parse
 
 🗂️ Búsqueda en un dominio específico con archivo de salida personalizado:
 ```bash
-./breach-parse.sh "@gmail.com" gmail.txt; cat gmail-master.txt | grep -i "hacker"
+sudo ./breach-parse.sh "@gmail.com" gmail.txt; grep -iE "hackerking4" output/gmail-master.txt
 ```
 
-🗂️ Búsqueda de "hacker" en una lista de múltiples dominios:
+🗂️ Búsqueda en un dominio específico con archivo de salida personalizado (actualizado):
+```bash
+sudo ./breach-parse.sh "@gmail.com" gmail.txt; grep -iE "hackerking4|rashadmingrimes" output/gmail-master.txt
+```
+
+🗂️ Búsqueda en una lista de múltiples dominios:
 ```bash
 ./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "hacker"
+```
+
+🗂️ Búsqueda en una lista de múltiples dominios (actualizado):
+```bash
+sudo ./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; grep -iE "rainer.luecke|Harry2990" output/multiple-master.txt
 ```
 
 🗂️ Búsqueda en múltiples dominios:
@@ -51,6 +61,11 @@ Ejecute `breach-parse` para obtener instrucciones
 📄 Búsqueda en un archivo existente:
 ```bash
 cat example-master.txt | grep -i "hacker"
+```
+
+📄 Búsqueda en un archivo existente (actualizado):
+```bash
+cat example-master.txt | grep -iE "hackerking4|rashadmingrimes"
 ```
 
 ## :bookmark_tabs: Notas
