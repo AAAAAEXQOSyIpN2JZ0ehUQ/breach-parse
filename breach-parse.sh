@@ -122,8 +122,9 @@ echo -e "${info} Generando reporte HTML..."
     echo "</pre></body></html>"
 } > "${output_dir}/${output_base}-report.html"
 
-# Mostrar mensaje de finalización
-echo -e "${checkmark} Proceso completado. Archivos generados en el directorio 'output':\n"
+# Mostrar mensaje de finalización y ruta actual del directorio de salida
+output_path=$(realpath "$output_dir")
+echo -e "${checkmark} Proceso completado. Archivos generados en el directorio ${cyan}${output_path}\n"
 echo -e "${cyan}  - ${output_base}-master.txt"
 echo -e "  - ${output_base}-users.txt"
 echo -e "  - ${output_base}-passwords.txt"
