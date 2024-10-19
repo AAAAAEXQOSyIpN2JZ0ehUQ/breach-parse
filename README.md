@@ -97,6 +97,14 @@ cat example-master.txt | grep -i "hacker"
 | :book:           | README.md           | Archivo README con la documentación del proyecto |
 | :package:        | install.sh          | Script de instalación automatizada               |
 
+## :star2: Contribuciones
+
+Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un *pull request* o *issue*.
+
+## :warning: Advertencias
+
+- Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
+
 ## :email: Contacto 
 * :busts_in_silhouette: **hmaverickadams**: [GitHub](https://github.com/hmaverickadams/breach-parse) - Desarrollador breach-pars (Heath Adams) 
 * :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse) - Actualizacion breach-parse.sh Apactacion codigo  
