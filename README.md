@@ -23,7 +23,7 @@ Descarga la lista de contraseñas filtradas desde magnet, que se encuentra aquí
 
 Si no almacena la lista de contraseñas (BreachCompilation) en `/opt/breach-parse`, especifique la ubicación de la siguiente manera:
 
-`breach-parse @gmail.com gmail.txt "~/Downloads/BreachCompilation/data"`
+`breach-parse "@gmail.com" gmail.txt "Downloads/BreachCompilation/data`
 
 Ejecute `breach-parse` para obtener instrucciones
 ## :rocket: Modo de Uso
