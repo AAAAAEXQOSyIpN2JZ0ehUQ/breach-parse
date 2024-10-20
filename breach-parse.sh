@@ -104,10 +104,10 @@ passwords="${output_dir}/${output_base}-passwords.txt"
 > "$passwords"
 
 echo -e "${process} Iniciando búsqueda en ${breachDataLocation}..."
-
-# Buscar de manera paralela
-find "$breachDataLocation" -type f -print0 | xargs -0 -P 4 -I {} grep -aEH "$search_domain" {} | sort -u > "$master"
-
+# Buscar de manera paralela y eliminar la ruta en la salida
+find "$breachDataLocation" -type f -print0 | xargs -0 -P 4 -I {} grep -aEH "$search_domain" {} | \
+    awk -F':' '{print $2 ":" $3}' | sort -u > "$master"
+    
 # Dividir resultados en usuarios y contraseñas
 echo -e "${info} Extrayendo nombres de usuario..."
 awk -F':' '{print $1}' "$master" | sort -u > "$users"
