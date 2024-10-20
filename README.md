@@ -50,7 +50,7 @@ Ejecute `breach-parse` para obtener instrucciones
 
 🗂️ Búsqueda en una lista de múltiples dominios (actualizado):
 ```bash
-./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; grep -iE "rainer.luecke|Harry2990" output/multiple-master.txt
+./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; grep -iE "rainer.luecke|Harry2990" output/multiple-master.txtk
 ```
 
 📄 Búsqueda en un archivo existente:
