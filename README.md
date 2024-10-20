@@ -10,9 +10,9 @@ Este es un script de Bash diseñado para extraer credenciales de archivos filtra
 ## :computer: Instalación
 ```bash
 cd /opt
+sudo rm -rf breach-parse
 sudo git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse.git
-cd breach-parse
-sudo chmod +x cd breach-parse/*
+sudo chmod +x breach-parse/*
 cd breach-parse
 sudo ./install.sh
 ls -ltha
@@ -35,32 +35,27 @@ Ejecute `breach-parse` para obtener instrucciones
 
 🗂️ Búsqueda en un dominio específico con archivo de salida personalizado:
 ```bash
-sudo ./breach-parse.sh "@gmail.com" gmail.txt; grep -iE "hackerking4" output/gmail-master.txt
+./breach-parse.sh "@gmail.com" gmail.txt; grep -iE "hackerking4" output/gmail-master.txt
 ```
 
 🗂️ Búsqueda en un dominio específico con archivo de salida personalizado (actualizado):
 ```bash
-sudo ./breach-parse.sh "@gmail.com" gmail.txt; grep -iE "hackerking4|rashadmingrimes" output/gmail-master.txt
+./breach-parse.sh "@gmail.com" gmail.txt; grep -iE "hackerking4|rashadmingrimes" output/gmail-master.txt
 ```
 
 🗂️ Búsqueda en una lista de múltiples dominios:
 ```bash
-./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "hacker"
+./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; cat multiple-master.txt | grep -i "rainer.luecke"
 ```
 
 🗂️ Búsqueda en una lista de múltiples dominios (actualizado):
 ```bash
-sudo ./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; grep -iE "rainer.luecke|Harry2990" output/multiple-master.txt
-```
-
-🗂️ Búsqueda en múltiples dominios:
-```bash
-./breach-parse.sh "@yahoo.com|@hotmail.com" multiple.txt; cat multiple-master.txt | grep -i "hacker"
+./breach-parse.sh "@toyota.de|@live.cn" multiple.txt; grep -iE "rainer.luecke|Harry2990" output/multiple-master.txt
 ```
 
 📄 Búsqueda en un archivo existente:
 ```bash
-cat example-master.txt | grep -i "hacker"
+cat example-master.txt | grep -i "hackerking4"
 ```
 
 📄 Búsqueda en un archivo existente (actualizado):
