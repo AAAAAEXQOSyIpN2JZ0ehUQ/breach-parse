@@ -10,8 +10,7 @@ Este es un script de Bash diseñado para extraer credenciales de archivos filtra
 ## :computer: Instalación
 ```bash
 cd /opt
-sudo rm -rf breach-parse
-sudo git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse.git
+sudo git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/breach-parse.git || (cd breach-parse && sudo git pull)
 sudo chmod +x breach-parse/*
 cd breach-parse
 sudo ./install.sh
