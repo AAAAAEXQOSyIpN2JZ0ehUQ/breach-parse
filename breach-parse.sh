@@ -37,12 +37,12 @@ function show_help() {
     echo -e "  ${green}[ubicación de datos de brechas]${reset}       Ruta opcional a los datos de brechas (predeterminado: /opt/breach-parse/BreachCompilation/data).\n"
 
     echo -e "${green}Ejemplos:${reset}\n"
-    echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt "Downloads/BreachCompilation/data"${reset}"
     echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt${reset}"
-    echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt; grep -iE \"hackerking4\" output/gmail-master.txt${reset}"
-    echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt; grep -iE \"hackerking4|rashadmingrimes\" output/gmail-master.txt${reset}"
-    echo -e "  ${green}sudo ./breach-parse.sh \"@toyota.de|@live.cn\" multiple.txt; grep -iE \"rainer.luecke\" output/multiple-master.txt${reset}"
-    echo -e "  ${green}sudo ./breach-parse.sh \"@toyota.de|@live.cn\" multiple.txt; grep -iE \"rainer.luecke|Harry2990\" output/multiple-master.txt${reset}"
+    echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt "Downloads/BreachCompilation/data"${reset}"
+    echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt && grep -iE \"hackerking4\" output/gmail-master.txt${reset}"
+    echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt && grep -iE \"hackerking4|rashadmingrimes\" output/gmail-master.txt${reset}"
+    echo -e "  ${green}sudo ./breach-parse.sh \"@toyota.de|@live.cn\" multiple.txt && grep -iE \"rainer.luecke\" output/multiple-master.txt${reset}"
+    echo -e "  ${green}sudo ./breach-parse.sh \"@toyota.de|@live.cn\" multiple.txt && grep -iE \"rainer.luecke|Harry2990\" output/multiple-master.txt${reset}"
     echo -e "  ${green}grep -iE \"hackerking4\" output/gmail-master.txt${reset}"
     echo -e "  ${green}grep -iE \"hackerking4|rashadmingrimes\" output/gmail-master.txt${reset}\n"
 }
