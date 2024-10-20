@@ -28,7 +28,7 @@ process="${white}[${magenta}>>${white}]${magenta}"
 # Función de ayuda
 function show_help() {
     echo -e "${green}Uso:${reset} $0 <dominio a buscar> <archivo base de salida> [ubicación de datos de brechas]\n"
-    
+        
     echo -e "${green}Descripción:${reset} Este script busca brechas de seguridad relacionadas con el dominio especificado.\n"
 
     echo -e "${green}Argumentos:${reset}"
@@ -37,6 +37,7 @@ function show_help() {
     echo -e "  ${green}[ubicación de datos de brechas]${reset}       Ruta opcional a los datos de brechas (predeterminado: /opt/breach-parse/BreachCompilation/data).\n"
 
     echo -e "${green}Ejemplos:${reset}\n"
+    echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt "Downloads/BreachCompilation/data"${reset}"
     echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt${reset}"
     echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt; grep -iE \"hackerking4\" output/gmail-master.txt${reset}"
     echo -e "  ${green}sudo ./breach-parse.sh \"@gmail.com\" gmail.txt; grep -iE \"hackerking4|rashadmingrimes\" output/gmail-master.txt${reset}"
